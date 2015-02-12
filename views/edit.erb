@@ -1,5 +1,6 @@
-<form action="/users/user[:id]" method="POST">
+<form action="/users/<%= @user[:id]%>" method="POST">
   <input type="hidden" name="_method" value="put">
-  <input type="text" name="user" id="" value = "<%= @user[:name]%>">
+  First: <input type="text" name="first" id="" value = "<%= @user[:first]%>">
+  Last: <input type="text" name="last" id="" value = "<%= @user[:last]%>">
   <input type="submit" value="Edit">
 </form>
